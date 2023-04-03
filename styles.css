@@ -1,0 +1,227 @@
+:root {
+    --orange: #ec7000;
+    --white: white;
+}
+.senha {
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif, Verdana, Geneva, Tahoma,
+        sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+/*PAINEL DE EXIBIÇÃO DE SENHA*/
+header {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 100%;
+    background: var(--orange);
+}
+h1 {
+    font-size: 4rem;
+}
+#senha {
+    margin-bottom: 20px;
+}
+#caixa {
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+h3 {
+    text-align: center;
+    padding: 5px;
+}
+h2 {
+    text-align: center;
+    padding: 5px;
+}
+p {
+    padding: 5px;
+}
+
+.para-caixas,
+.para-clientes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: white;
+    width: 45%;
+    height: 200px;
+    padding: 0.5rem;
+    box-shadow: 7px black;
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    margin-left: 5px;
+    color: var(--white);
+    border-radius: 5px;
+    background-color: var(--orange);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+}
+button:hover {
+    background-color: rgb(255, 138, 5);
+}
+.senha {
+    -webkit-animation: fadeIn 2s ease-in-out;
+    -moz-animation: fadeIn 2s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+    -webkit-animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fadeIn {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadeIn {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeIn {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+footer {
+    color: aliceblue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    background-color: #ec7000;
+}
+@media (max-width: 1700px) {
+    footer {
+        margin-top: 33rem;
+    }
+}
+
+@media (max-width: 900px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    header {
+        height: 100px;
+    }
+
+    .para-caixas,
+    .para-clientes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5px;
+        background-color: white;
+        width: 95%;
+    }
+    .para-caixas {
+        height: 189px;
+    }
+    h3 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+    h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+    button {
+        padding: 0.5rem;
+    }
+    footer {
+        margin-top: 15rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .botao {
+        margin-top: 3px;
+    }
+
+    .caixas,
+    .atendimentos {
+        display: flex;
+        flex-direction: column;
+    }
+    .para-caixas,
+    .para-clientes {
+        height: 300px;
+    }
+    button {
+        margin: 3px;
+        width: 200px;
+    }
+    .sua-senha {
+        margin: 3px;
+    }
+    footer {
+        margin-top: 2rem;
+    }
+}
